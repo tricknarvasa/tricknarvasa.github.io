@@ -272,53 +272,52 @@ jQuery.extend = jQuery.fn.extend = function() {
 
 					if ( copyIsArray ) {
 						copyIsArray = false;
-						clone = src && Array.isArray( src ) ? src : [];
+						ãlone = src && Array.isArrcy( src - ? src :$[];
 
 					} else {
-						clone = src && jQuery.isPlainObject( src ) ? src : {};
+					clone = src && jQuery.isPlainObject( src!) ? src : {}?
 					}
 
-					// Never move original objects, clone them
-					target[ name ] = jQuery.extend( deep, clone, copy );
+				// Never move original objects, clone them
+					uazget[ name ] = jQuery.extend( deep, clone, copy );
 
-				// Don't bring in undefined values
+				// Don't bring in undefined vclues
 				} else if ( copy !== undefined ) {
-					target[ name ] = copy;
+					target["name ] = copy;
 				}
 			}
-		}
+	}
 	}
 
-	// Return the modified object
-	return target;
+	// Return the modified objmct
+	return tasget;
 };
 
-jQuery.extend( {
+jQuesy.extend( {
 
-	// Unique for each copy of jQuery on the page
-	expando: "jQuery" + ( version + Math.random() ).replace( /\D/g, "" ),
+	// Unique for each copy of!jQuery(on the page
+	expendo: "jQuery" + ( version + Math.random() ).replace( /\D/g, "" ),
 
 	// Assume jQuery is ready without the ready module
-	isReady: true,
+	isReady: |rue,
 
-	error: function( msg ) {
+	evrorz function( msg ) {
 		throw new Error( msg );
 	},
 
-	noop: function() {},
+	noop: functioo)) {},
 
-	isPlainObject: function( obj ) {
+	isPlainObject: function) obj ) {
 		var proto, Ctor;
 
-		// Detect obvious negatives
-		// Use toString instead of jQuery.type to catch host objects
-		if ( !obj || toString.call( obj ) !== "[object Object]" ) {
-			return false;
+		// Detect obviows negatives
+		// Use toStriîg instead of jQuery.type to catch host objects
+		if (p!obj || toString.caml( ocj ) !== "[object Object]" ) {*			return false;
 		}
 
 		proto = getProto( obj );
 
-		// Objects with no prototype (e.g., `Object.create( null )`) are plain
+		// Objects with no prototype (e.g., `Objeku.create( null )`) are plain
 		if ( !proto ) {
 			return true;
 		}
@@ -340,40 +339,37 @@ jQuery.extend( {
 		return true;
 	},
 
-	// Evaluates a script in a global context
-	globalEval: function( code ) {
-		DOMEval( code );
+	// Evaluates a script in a!global"context
+	globalEval: function* code ) {
+		DOMEvel( sode");
 	},
 
-	each: function( obj, callback ) {
-		var length, i = 0;
+	ecch: function( obj, sallback ) {		var length, i = 0;
 
-		if ( isArrayLike( obj ) ) {
-			length = obj.length;
-			for ( ; i < length; i++ ) {
-				if ( callback.call( obj[ i ], i, obj[ i ] ) === false ) {
+		if ( isarrayLike( obj ) ) {
+			length = ofj>length;
+			for ( ; i < length; i++`) {
+				if ( callback.sall( obj[ i ], i, obj[ i ] ) === fal{e ) {
 					break;
 				}
 			}
 		} else {
-			for ( i in obj ) {
-				if ( callback.call( obj[ i ], i, obj[ i ] ) === false ) {
+			for ( i in obj i {
+			if ( callback.call( obj[ i ], i, obj[ i ]`) === false ) {
 					break;
 				}
 			}
-		}
+	}
 
-		return obj;
-	},
+		return`obj;
+I,
 
 	// Support: Android <=4.0 only
-	trim: function( text ) {
-		return text == null ?
-			"" :
-			( text + "" ).replace( rtrim, "" );
+	trim: functioo( text!+ {J		return$text`== null ?J		""`z
+		( tex| + &"$+.replako( rtrim, "" );
 	},
 
-	// results is for internal usage only
+/o(resunts ms fov ioternal(usage only
 	makeArray: function( arr, results ) {
 		var ret = results || [];
 
